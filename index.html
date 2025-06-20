@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Container Section -->
+    <div class="container">
+
+        <!-- Left container styling -->
+        <div class="left-container">
+            <div class="left-top-container">
+
+                <img class="close-btn" src="images/icons/close-1.svg" alt="">
+                <!-- Home icon styling -->
+
+                <div class="home-icons">
+                    <img class="spotify-logo" src="images/spotify-logo.svg" alt="spotify-logo" />
+                    <div class="icons">
+                        <p class="Home-icon"><i class="fa-solid fa-house"></i><b>Home</b></p>
+                        <p class="Search-icon"><i class="fa-solid fa-magnifying-glass"></i>Search</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="left-bottom-container">
+                <!-- Library icon styling -->
+
+                <div class="library-title">
+                    <p><img src="images/icons/playlist-icon.svg" alt="playlist">Your Library</p>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+                <!-- Song list section -->
+                <div class="song-listing">
+                    <ul>
+
+                        <li>
+                            <div class="song-card-container">
+                                <div class="song-list-card">
+                                    <div class="card-list-img">
+                                        <img src="https://i.scdn.co/image/ab67616d0000b27379dd2165f2180c79713bfe4a"
+                                            alt="" class="song-img">
+                                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                    </div>
+                                    <div class="song-info">
+                                        <p class="song-title">Demo</p>
+                                        <p class="song-artist">Demo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <!-- Footer Styling -->
+
+                <div class="footer-links">
+                    <div><a href="https://www.spotify.com/jp/legal/">Legal</a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/">Privacy Center</a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/">Privacy Policy</a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/">Cookies</a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3">About Ads</a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/">Accessibility</a></div>
+
+                </div>
+
+
+                <button class="globe-btn">
+                    <span>
+                        <img src="images/icons/globe.svg" alt="globe-icon">
+                        <p>English</p>
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Right container styling -->
+        <div class="right-container">
+
+            <!-- Navigation Section -->
+            <div class="right-container-nav">
+
+
+                <div class="nav">
+                    <img class="hambur" src="images/icons/hamburger.svg" alt="">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <div class="buttons">
+                    <button class="sign-up">Sign up</button>
+                    <button class="log-in">Log in</button>
+                </div>
+            </div>
+
+            <!-- Playlist Section  -->
+
+            <div class="playlist-section">
+                <h1>Today's Biggest Hits</h1>
+
+                <!-- Card Section -->
+
+                <div class="card-container cc">
+                </div>
+
+                <h1>Recently Played</h1>
+                <div class="card-container-1 cc">
+
+
+                </div>
+                <h1>Throwback</h1>
+                <div class="card-container-2 cc">
+
+
+                </div>
+            </div>
+
+            <!-- Playbar Section -->
+
+            <div class="playbar-container">
+
+                <div class="playbar-section">
+
+                    <div class="song-name" id="songName">
+
+                    </div>
+
+                    <div class="song-player-bar">
+                        <div class="song-controls">
+                            <i id="back" class="fa-solid fa-backward-step back"></i>
+                            <i id="play" class="fa-solid fa-circle-play play"></i>
+                            <i id="next" class="fa-solid fa-forward-step next"></i>
+                        </div>
+
+
+                        <div class="seek-container">
+                            <div class="song-duration-1">
+                                <p>00:00</p>
+                            </div>
+                            <div class="seek-bar">
+                                <div class="top-seek-bar"></div>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="song-duration">
+                                <p>00:00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="volume">
+                        <i class="fa fa-volume-up vol " aria-hidden="true"></i>
+                        <div class="range">
+                            <input type="range" name="volume" id="" class="volume-bar">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
